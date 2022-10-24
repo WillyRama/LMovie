@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ProfilFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/heading"
+        android:layout_marginBottom="50dp"
+        android:text="@string/profil" />
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher_background" />
+
+    <EditText
+        android:id="@+id/namaProfil"
+        android:ems="10"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"/>
+
+    <EditText
+        android:id="@+id/emailProfil"
+        android:ems="10"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email" />
+
+    <TextView
+        android:id="@+id/uProfil"
+        android:ems="10"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"/>
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Tombol"
+            android:text="@string/ubah"/>
+        <Button
+            android:id="@+id/btnKeluar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Tombol"
+            android:text="@string/keluar"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnIndo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Tombol"
+            android:text="@string/indonesia"/>
+        <Button
+            android:id="@+id/btning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Tombol"
+            android:text="@string/inggris"/>
+    </LinearLayout>
+
+</LinearLayout>

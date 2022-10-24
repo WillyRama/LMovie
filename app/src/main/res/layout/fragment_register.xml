@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RegisterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/heading"
+        android:layout_marginBottom="30dp"
+        android:text="@string/daftar" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"
+        style="@style/logo"/>
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/masukkan_nama"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/masukkan_email" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/masukkan_username" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_below="@id/user"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/masukkan_password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/konfirmpass"
+        android:layout_below="@id/user"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ulangi Katasandi"
+        android:layout_marginBottom="50dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnregis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Tombol"
+        android:text="@string/daftar"/>
+
+</LinearLayout>

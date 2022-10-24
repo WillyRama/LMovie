@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LMovie</string>
+    <string name="masukkan_username">Insert  Username</string>
+    <string name="masukkan_password">Insert Password</string>
+    <string name="login">Login</string>
+    <string name="btnlogin">Login</string>
+    <string name="belum_memiliki_akun_register">Don\'t Have Any Account?, Resgister</string>
+    <string name="daftar">Register</string>
+    <string name="masukkan_email">Insert Email</string>
+    <string name="selamat_datang">Welcome</string>
+    <string name="judul">Title</string>
+    <string name="rilis">Release</string>
+    <string name="reting">Rating</string>
+    <string name="popularitas">Popular</string>
+    <string name="detail">Descrip</string>
+    <string name="profil">Profile</string>
+    <string name="masukkan_nama">Insert  Username</string>
+    <string name="keluar">Logout</string>
+    <string name="ubah">Change</string>
+    <string name="favorite">Favorite</string>
+    <string name="indonesia">Indonesian</string>
+    <string name="inggris">English</string>
+</resources>

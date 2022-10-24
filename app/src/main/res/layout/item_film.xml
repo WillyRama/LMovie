@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/crFilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="@color/purple_700"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rlContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/Img"
+                android:layout_margin="10dp"
+                android:layout_width="150dp"
+                android:layout_height="200dp"/>
+
+            <LinearLayout
+                android:id="@+id/lFilm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/Img"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvNama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/judul"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvReting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/popularitas"
+                    android:textColor="@color/grey" />
+
+                <TextView
+                    android:id="@+id/tvRilis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rilis"
+                    android:textColor="@color/grey" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvdesc"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@id/lFilm"
+                android:layout_toRightOf="@id/Img"
+                android:text="@string/detail"
+                android:textColor="@color/grey" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

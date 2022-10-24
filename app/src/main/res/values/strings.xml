@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name" translatable="false">LMovie</string>
+    <string name="masukkan_username">Masukkan Username</string>
+    <string name="masukkan_password">Masukkan Katasandi</string>
+    <string name="login">Login</string>
+    <string name="btnlogin">Masuk</string>
+    <string name="belum_memiliki_akun_register">Belum Memiliki Akun?,Register</string>
+    <string name="daftar">Daftar</string>
+    <string name="masukkan_email">Masukkan Email</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="judul">Judul</string>
+    <string name="rilis">Rilis</string>
+    <string name="reting">Reting</string>
+    <string name="popularitas">Popularitas</string>
+    <string name="detail">Detail</string>
+    <string name="profil">Profil</string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="keluar">Keluar</string>
+    <string name="ubah">Ubah</string>
+    <string name="favorite">Favorite</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="inggris">Inggris</string>
+</resources>

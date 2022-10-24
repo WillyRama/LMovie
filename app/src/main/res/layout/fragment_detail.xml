@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetailFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/heading"
+        android:layout_marginBottom="20dp"
+        android:text="@string/detail" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlContent"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/Img"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:id="@+id/tvdesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/Img"
+                android:text="@string/detail"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/linearFilm"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/Img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvNama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/judul"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvReting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/popularitas"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvRilis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rilis"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/fav"
+                android:src="@drawable/ic_favorite"
+                android:backgroundTint="@color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

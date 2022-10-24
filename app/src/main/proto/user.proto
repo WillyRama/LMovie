@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "com.willyramad.lmovie";
+option java_multiple_files = true;
+
+message UserProto {
+  // filter for showing / hiding completed tasks
+  string nama = 1;
+  string email = 2;
+  string username = 3;
+  string pass = 4;
+  string splash = 5;
+}
