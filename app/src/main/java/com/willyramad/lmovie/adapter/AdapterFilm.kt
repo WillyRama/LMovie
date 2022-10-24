@@ -32,7 +32,7 @@ class AdapterFilm(var listFilm : List<Result>) : RecyclerView.Adapter<AdapterFil
         holder.binding.crFilm.setOnClickListener {
             val bundle = Bundle()
             val pos = listFilm[position]
-            bundle.putString("judul", pos.name)
+            bundle.putString("judul", pos.originalName)
             bundle.putString("rilis", pos.firstAirDate)
             bundle.putString("detail", pos.overview)
             bundle.putString("reting", pos.voteAverage.toString())

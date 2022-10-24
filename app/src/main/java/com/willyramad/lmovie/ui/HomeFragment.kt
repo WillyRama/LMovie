@@ -37,26 +37,30 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setDataFilm()
+
+        userViewModel =ViewModelProvider(requireActivity()).get(UserViewModel::class.java)
+
         userViewModel.dataUser.observe(requireActivity()){
             Nama = it.nama
             splash = it.splash
         }
         binding.tvHeaderUser.text = "Selamat datang "+Nama
+
         binding.profil.setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_profilFragment)
         }
         binding.fav.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_favoriteFragment)
         }
-
+        setDataFilm()
     }
     fun setDataFilm(){
         val viewModel = ViewModelProvider(requireActivity()).get(ViewModelFilm::class.java)
         viewModel.getAllFilm().observe(viewLifecycleOwner, Observer {
+
             if (it != null){
-                binding.rvFilm.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL,false)
                 adapterFilm = AdapterFilm(it.results)
+                binding.rvFilm.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL,false)
                 binding.rvFilm.adapter = adapterFilm
             }else{
                 Toast.makeText(context, "Data Kosong", Toast.LENGTH_SHORT).show()

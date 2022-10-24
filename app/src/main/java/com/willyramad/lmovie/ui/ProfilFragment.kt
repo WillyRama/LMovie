@@ -79,7 +79,7 @@ class ProfilFragment : Fragment() {
         }
         binding.btnKeluar.setOnClickListener {
             userViewModel.editSplash("false")
-            Navigation.findNavController(view).navigate(R.id.action_profilFragment_to_homeFragment)
+            Navigation.findNavController(view).navigate(R.id.action_profilFragment_to_loginFragment)
             Toast.makeText(requireActivity(), "Anda Berhasil Keluar", Toast.LENGTH_SHORT).show()
         }
     }

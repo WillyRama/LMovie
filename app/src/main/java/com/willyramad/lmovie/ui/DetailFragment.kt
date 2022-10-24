@@ -50,13 +50,14 @@ class DetailFragment : Fragment() {
         Glide.with(requireActivity()).load(IMAGE_BASE + gambar).into(binding.Img)
 
 
-        val detailfav = requireActivity().intent.getSerializableExtra("detailfav") as Result
+
         binding.tvNama.text = "Title :"+ jud
         binding.tvRilis.text = "Release :"+ rilis
         binding.tvdesc.text = "Description :\n"+ desc
         binding.tvReting.text = "Rating :"+ popular
 
         binding.fav.setOnClickListener {
+            val detailfav = requireActivity().intent.getSerializableExtra("detailfav") as Result
             GlobalScope.async {
                 val fav = requireActivity().intent.getSerializableExtra("detailfav") as Result?
                 val idd = detailfav.id

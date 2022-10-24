@@ -5,11 +5,13 @@ import androidx.lifecycle.ViewModel
 import com.willyramad.lmovie.model.ResponFilmItem
 import com.willyramad.lmovie.service.ApiService
 import com.willyramad.lmovie.service.RestFullApi
+import dagger.hilt.android.lifecycle.HiltViewModel
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import javax.inject.Inject
 
+@HiltViewModel
 class ViewModelFilm @Inject constructor(var api : ApiService) : ViewModel() {
     lateinit var liveDataFilm : MutableLiveData<ResponFilmItem?>
 
