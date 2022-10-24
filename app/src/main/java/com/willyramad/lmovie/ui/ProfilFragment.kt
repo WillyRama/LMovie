@@ -183,7 +183,7 @@ class ProfilFragment : Fragment() {
         registerForActivityResult(ActivityResultContracts.GetContent()) { result ->
             blurViewM.imageUri(result!!)
             saveProfile(result)
-            val image = BitmapFactory.decodeFile(requireActivity().applicationContext.filesDir.path + File.separator +"blur_filter_outputs"+ File.separator +"Blurred-Image.png")
+            val image = BitmapFactory.decodeFile(requireActivity().applicationContext.filesDir.path + File.separator +"blur-filter-output-%s"+ File.separator +"blur-filter-output-%s.png")
             if(image!=null){
                 binding.ivImage.setImageBitmap(image)
             }else {
